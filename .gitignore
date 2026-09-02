@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Generated dashboards (never commit a rendered dashboard)
+/stats.html
+/*.html
+
+# OS
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
