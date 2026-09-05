@@ -1,16 +1,19 @@
 # cc-stats
 
+[![CI](https://github.com/oh-namgyu/cc-stats/actions/workflows/ci.yml/badge.svg)](https://github.com/oh-namgyu/cc-stats/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+> **한글 요약**
+>
+> - `~/.claude/projects` 아래의 모든 세션 기록을 훑어 **대시보드 HTML 한 개**로 만들어 주는 CLI 입니다.
+> - 설치할 것이 없습니다. Python 3.9 이상이면 되고 **외부 의존성이 0개** 입니다 (표준 라이브러리만 사용).
+> - 바로 실행: `python3 -m cc_stats` → 현재 폴더에 `stats.html` 이 생깁니다.
+> - 토큰 사용량, 도구 사용 분포, 오류율, 프로젝트별 활동, 요일×시간 히트맵, 세션 길이를 한 화면에서 봅니다.
+> - 결과물에 **대화 내용은 전혀 들어가지 않습니다.** 숫자·날짜·도구 이름·정리된 프로젝트 이름만 담깁니다.
+> - 계정 이름과 홈 경로 등은 **기본으로 가려집니다** (`-Users-alice-code-app` → `code-app`).
+> - 자바스크립트가 한 줄도 없습니다. 모든 차트는 인라인 SVG 라서 오프라인에서 그대로 열립니다.
+
 Turn every Claude Code session on your machine into one self-contained HTML analytics dashboard.
-
-## 한눈 요약
-
-- `~/.claude/projects` 아래의 모든 세션 기록을 훑어 **대시보드 HTML 한 개**로 만들어 주는 CLI 입니다.
-- 설치할 것이 없습니다. Python 3.9 이상이면 되고 **외부 의존성이 0개** 입니다 (표준 라이브러리만 사용).
-- 바로 실행: `python3 -m cc_stats` → 현재 폴더에 `stats.html` 이 생깁니다.
-- 토큰 사용량, 도구 사용 분포, 오류율, 프로젝트별 활동, 요일×시간 히트맵, 세션 길이를 한 화면에서 봅니다.
-- 결과물에 **대화 내용은 전혀 들어가지 않습니다.** 숫자·날짜·도구 이름·정리된 프로젝트 이름만 담깁니다.
-- 계정 이름과 홈 경로 등은 **기본으로 가려집니다** (`-Users-alice-code-app` → `code-app`).
-- 자바스크립트가 한 줄도 없습니다. 모든 차트는 인라인 SVG 라서 오프라인에서 그대로 열립니다.
 
 ## What it is
 
@@ -144,4 +147,4 @@ fix upstream and re-sync so the copies stay diffable.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). Security policy: [SECURITY.md](SECURITY.md).
